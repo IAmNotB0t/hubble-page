@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap);
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.nav button { 
+    background-color: white;
+    height: 30px;
+    border: 1.5px ;
+    width: 15%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 1px rgb(198, 198, 198);
+}
+
+.intro {
+    display: flex;
+    padding: 0px 50px;
+    justify-content: center;
+
+}
+
+.iLeft {
+    width: 40%;
+}
+
+.iLeft h2 {
+    font-family: 'Poppins';
+    font-weight: 600 ;
+}
+
+.iLeft button {
+    background-color: hsl(322, 100%, 66%);
+    border: 1px ;
+    border-radius: 15px;
+    color: white;
+    height: 40px;
+    width: 35%;
+    box-shadow: 1px 1px 5px 1px pink ;
+}
+
+.iRight {
+    width: 60%;
+}
