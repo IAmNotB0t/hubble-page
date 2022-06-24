@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap);
 
 
+
 body {
     padding: 0;
     margin: 0;
@@ -8,27 +9,46 @@ body {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+.main {
+    background-image: url(./images/bg-hero-desktop.png);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
+    margin-bottom: 25px;
+    
 }
 
 .nav button { 
     background-color: white;
     height: 30px;
     border: 1.5px ;
-    width: 15%;
+    width: 190px;
     border-radius: 15px;
     box-shadow: 1px 1px 5px 1px rgb(198, 198, 198);
 }
 
+
+.nav img {
+    width: 60%;
+    height: 80%;
+}
 .intro {
     display: flex;
     padding: 0px 50px;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -44,13 +64,119 @@ body {
 .iLeft button {
     background-color: hsl(322, 100%, 66%);
     border: 1px ;
-    border-radius: 15px;
+    border-radius: 18px;
     color: white;
     height: 40px;
-    width: 35%;
+    width: 200px;
     box-shadow: 1px 1px 5px 1px pink ;
-}
+    padding: 0px;
+}   
 
 .iRight {
     width: 60%;
 }
+
+.iRight img {
+    width: 100%;
+
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 100px 50px;
+
+    
+}
+
+.card1, .card2, .card3 {
+    height: 300px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 5% 2% 5% 8%;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px 1px rgb(230, 230, 230);
+}
+
+.cards img {
+    width: 35%;
+    height: 100%;
+}
+
+.card2 {
+    flex-direction: row-reverse;
+}
+
+
+.para {
+    width: 45%;
+    
+}
+
+.para .head {
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 25px;
+}
+
+
+.community {
+    
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px 1px rgb(230, 230, 230) ;
+    gap: 15px;
+    
+
+}
+
+.community h2 { 
+    padding: 0;
+    margin: 0;
+}
+
+
+.community button {
+    background-color: hsl(322, 100%, 66%);
+    border: 1px ;
+    border-radius: 20px;
+    color: white;
+    height: 44px;
+    width: 220px;
+    box-shadow: 1px 1px 5px 1px pink ;
+    padding: 0px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#footer li {
+    list-style-type: none;
+}
+
+#social {
+    display: flex;
+}
+
+#fRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
