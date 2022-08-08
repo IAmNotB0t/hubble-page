@@ -192,7 +192,8 @@ a {
 
 
 .middle img {
-    width: 80%;
+    width: 90%;
+   
 }
 
 
@@ -200,8 +201,10 @@ a {
     padding-left: 3rem;
 }
 
+
+
 .section p {
-    padding-right: 5rem;
+    padding-right: 3rem;
 }
 @media (max-width: 40rem) {
 
@@ -209,6 +212,7 @@ a {
     .first,
     .third {
         flex-direction: column-reverse;
+        
     }
 
     .second {
@@ -230,14 +234,30 @@ a {
 
     .middle img {
         padding: 4rem 0px;
+        
     }
 
     .middle h2 {
         font-size: 1.7rem;
     }
 
+    .image {
+        text-align: center;
+    }
+
 
 }
+
+
+.community {
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow:  1px 1px 5px 1px rgb(230, 230, 230) ;
+}
+
+
+
 
 
 
