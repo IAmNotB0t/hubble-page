@@ -64,19 +64,26 @@ Footer {
 
 .smallButton {
     border: 5px;
-    border-radius: 19px;
-    padding: 0.7rem 3rem;
+    border-radius: 20px;
+    padding: 0.7rem 3.2rem;
     font-weight: 500;
     background-color: white;
-    box-shadow: 1px 1px 5px 1px rgb(198, 198, 198);
+    box-shadow: 1px 1px 5px 1px rgb(218, 218, 218);
     
 }
 
 .smallButton-pink {
     background-color: var(--clr-primary-pink);
+    padding: 0.8rem 3.2rem;
     margin-top: 1.5rem;
     box-shadow: 1px 1px 5px 1px pink ;
     
+}
+
+
+button a {
+    font-size: 14px;
+    font-family: var(--ff-body);
 }
 
 .nav {
@@ -109,14 +116,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 10rem;
     
 }
 
 .left {
     width: 55%;
     font-size: 15px;
-    padding-right: 5rem;
+    padding-right: 2rem;
    
     
     
@@ -124,7 +131,7 @@ a {
 
 .left h2 {
     
-    font-size: 3rem;
+    font-size: 35px;
     font-weight: 1000;
 }
 
@@ -135,7 +142,7 @@ a {
 
 
 .right img {
-    width: 100%;
+    width: 90%;
     
 
     
@@ -191,8 +198,8 @@ a {
 .third {
     display: flex;
     align-items: center;
-    box-shadow: 1px 1px 5px 1px rgb(230, 230, 230);
-    border-radius: 18px;
+    box-shadow: 1px 1px 8px 1px rgba(243, 243, 243, 0.7),  -1px -1px 8px 1px rgba(243, 243, 243, 0.7 );
+    border-radius: 12px;
     margin: 1.2rem;
     padding: 2.5rem;
     font-family: var(--ff-headings);
@@ -257,15 +264,19 @@ a {
 
 }
 
-
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
 .community {
+    
     text-align: center;
-    width: 50rem;
     padding: 3rem;
-    margin: auto;
-    margin-top: 7rem;
-    border-radius: 18px;
-    box-shadow:  1px 1px 5px 1px rgb(66, 66, 66);
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 10px;
+    box-shadow:  1px -1px 8px 1px rgba(243, 243, 243, 0.7);
     position: relative;
     top: 3.5rem;
     background-color: white;
@@ -276,13 +287,38 @@ a {
 
 .community button {
     border: 5px;
-    border-radius: 19px;
-    padding: 0.7rem 3rem;
+    border-radius: 25px;
+    padding: 0.9rem 3.5rem;
     color: white;
     font-weight: 500;
     background-color: var(--clr-primary-pink);
+    box-shadow: 1px 1px 5px 1px pink ;
     
 }
+
+@media (max-width: 40rem) {
+    .community {
+        padding: 3rem 1rem;
+        font-size: 10px;
+        margin: 0.5rem;
+    }
+
+
+    .community h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+.community button a {
+    color: white;
+    font-weight: 500;
+    font-family: var(--ff-headings);
+    
+}
+
+
 
 
 footer {
@@ -300,29 +336,93 @@ footer {
  
     grid-template-areas: 
     "header header header header header"
-    "sides1 sentences1 links1 links2 icons"
-    "sides2 sentences2 links1 links2 ."
-    "sides3 sentences3 . . copyright"
+    "information information links1 links2 icons"
+    "information information links1 links2 ."
+    "information information . . copyright"
   
 }
 
 
+@media (max-width:40rem) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 10rem 1rem 3rem 1rem;
+        font-size: 1rem;
+    }
+
+    footer .information {
+        gap: 2rem;
+        margin: 2rem 0 4rem 0;
+    }
+
+
+    footer ul {
+        padding: 0;
+    }
+
+
+    .icons {
+        align-self: center;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+    }
+    
+}   
+    
+
+
+
 .header {
     grid-area: header;
-    align-self: center;
+    
+
+}
+
+.header img {
+    margin-bottom: 1rem;
+}
+
+.information {
+    grid-area: information;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 .sides1 {
     grid-area: sides1;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.sides1 img {
+    width: 1.2rem;
+    height: 1.5rem;
 }
 
 .sides2 {
     grid-area: sides2;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    
 }
 
 .sides3 {
     grid-area: sides3;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
 
