@@ -72,6 +72,7 @@ Footer {
     
 }
 
+
 .smallButton-pink {
     background-color: var(--clr-primary-pink);
     padding: 0.8rem 3.2rem;
@@ -271,9 +272,9 @@ a {
 }
 .community {
     
-    text-align: center;
+    text-align: center ;
     padding: 3rem;
-    margin: 0 auto;
+    
     margin-top: 5rem;
     border-radius: 10px;
     box-shadow:  1px -1px 8px 1px rgba(243, 243, 243, 0.7);
@@ -328,7 +329,7 @@ footer {
     height: auto;
     display: grid;
     background-color: hsl(192, 100%, 9%);
-    grid-template-columns: [col-start]3%[col2]25%[col3]18%[col4]20%[col5]22%[col-end];
+    grid-template-columns: [col-start]3%[col2]23%[col3]20%[col4]20%[col5]22%[col-end];
     grid-template-rows: 4em  ;
     grid-auto-rows: min-content;
     color: rgb(181, 181, 181);
@@ -498,9 +499,15 @@ ul a:hover {
 }
 
 
+.smallButton:hover {
+    
+    box-shadow: 1px 1px 8px 1px rgb(170, 170, 170);
+    
+}
 
-
-
+.community button:hover {
+    box-shadow: 1px 1px 8px 1px rgb(170, 170, 170);
+}
 
 
 
