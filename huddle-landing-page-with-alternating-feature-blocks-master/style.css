@@ -48,7 +48,9 @@ body {
     font-weight: var(--fw-body);
     font-size: var(--fs-body);
     background-image: url(./images/bg-hero-desktop.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
    
 
 
